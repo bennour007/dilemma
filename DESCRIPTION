@@ -1,0 +1,33 @@
+Package: dilemma
+Type: Package
+Title: Prisoner's Dilemma Games on Networks
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Mohamed Hsin", "Bennour",
+      email = "your@email",
+      role = c("aut", "cre")
+    )
+  )
+Description: Simulates the prisoner's dilemma among players connected by a
+    network. In each round, players play the game with each of their peers,
+    score their payoffs, and copy the best-performing peer when their peers
+    did better. Any 'igraph' or 'tidygraph' network can be used, and players
+    can judge success by the sum, mean or median of their payoffs, or by
+    comparing with a single random peer.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
+Depends: 
+    R (>= 4.1.0)
+Imports: 
+    dplyr (>= 1.1.0),
+    igraph,
+    purrr (>= 1.0.0),
+    tibble,
+    tidygraph,
+    utils
