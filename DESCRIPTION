@@ -31,3 +31,5 @@ Imports:
     tibble,
     tidygraph,
     utils
+URL: https://github.com/bennour007/dilemma
+BugReports: https://github.com/bennour007/dilemma/issues
